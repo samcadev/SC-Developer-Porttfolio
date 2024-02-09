@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel vs DC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    background-color: #dddddd;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+}
+nav {
+    background-color: #232323;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box {
+    width: 10rem;
+    background-color: transparent;
+    display: flex;
+    height: 2rem;
+    color: #dddddd;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #dddddd;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+    z-index: 90;
+}
+input {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    color: #dddddd;
+    outline: none;
+}
+
+.resultados {
+    position: absolute;
+    margin-top: 3rem;
+    top: -100cqi;
+    width: 15rem;
+    left: -25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #232323;
+    padding: .5rem;
+    transition: 500ms;
+}
+.resultados a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.resultados a:hover {
+    text-decoration: underline;
+}
+.resultados li {
+    list-style: none;
+}
+
+input:valid ~ label,
+input:focus ~ label {
+    top: -5px;
+    scale: .8;
+}
+:focus ~ .resultados {
+    top: auto;
+}
+#noResultados {
+    color: #777777;
+}
+
+h1 {
+    margin-top: 4em;
+    text-align: center;
+}
+h2 {
+    color: #232342;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: .2rem;
+}
+.titulo {
+    margin: 0 5rem 2rem 5rem;
+}
+.introduccion {
+    margin: 0 5rem 1em 5rem;
+}
+.parrafos {
+    margin: 2em 5rem 1em 5rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+i {
+    z-index: 101;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    bottom: -20%;
+}
+
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/4aa5d98126.js" crossorigin="anonymous"></script>
+    <header>
+            <nav>
+                <div class="input-box">
+                    <input type="text" id="busqueda" required >
+                    <label for="#" class="buscar" id="labelBuscar">Buscar...</label>
+                    <i class="fa-solid fa-magnifying-glass" ></i>
+                    <div class="resultados" id="result">
+                        <ul>
+                            <li>
+                                <a href="#sipderman-miles">Spider Man</a>
+                            </li>
+                            <li>
+                                <a href="#sipderman-miles">Miles</a>
+                            </li>
+                            <li>
+                                <a href="#ironman-riri">Iron Man</a>
+                            </li>
+                            <li>
+                                <a href="#ironman-riri">Riri Williams</a>
+                            </li>
+                            <li>
+                                <a href="#thor-jane">Thor</a>
+                            </li>
+                            <li>
+                                <a href="#thor-jane">Jane Foster</a>
+                            </li>
+                            <li>
+                                <a href="#hulck-jennifer">Hulk</a>
+                            </li>
+                            <li>
+                                <a href="#hulck-jennifer">Jennifer Walters</a>
+                            </li>
+                        </ul>
+                        <p id="noResultados"></p>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Travesía por el Multiverso Marvel: Explorando las Historias de Sus Personajes y Comparándolas con el Multiverso DC</h1>
+        </div>
+        <div class="introduccion">
+            <p><span>El</span> multiverso Marvel despliega un espectáculo asombroso de realidades paralelas donde los héroes y villanos se manifiestan en formas únicas. Al adentrarnos en estas dimensiones, descubrimos fascinantes variaciones de personajes icónicos y sus historias entrelazadas. Compararemos estas narrativas con las de sus contrapartes en el Multiverso DC, destacando las similitudes y diferencias que definen a cada universo.</p>
+        </div>
+            <div class="parrafos">
+            <h2 id="sipderman-miles">Spider-Man: Peter Parker vs. Miles Morales</h2>
+
+            <p>En el corazón del multiverso arácnido, Peter Parker encarna la esencia clásica de Spider-Man: un estudiante universitario, fotógrafo y héroe que equilibra la vida cotidiana con la lucha contra el crimen. Miles Morales, en cambio, representa la nueva generación. De ascendencia latina, Miles hereda el manto del Hombre Araña en un universo donde Peter ha fallecido. Ambos comparten la responsabilidad heroica, pero divergen en orígenes y perspectivas, ampliando la riqueza de la mitología arácnida.</p>
+
+            <h2 id="ironman-riri">Iron Man: Tony Stark vs. Riri Williams</h2>
+
+            <p>El genio multimillonario Tony Stark encabeza la saga tecnológica como Iron Man, con una narrativa que abarca desde la arrogancia hasta la redención. En una realidad alterna, Riri Williams, una prodigiosa ingeniera afroamericana, asume el manto de Iron Woman. Su historia destaca la evolución del héroe tecnológico, desafiando expectativas y abriendo nuevas posibilidades para el legado de Iron Man.</p>
+
+            <h2 id="thor-jane">Thor: Odinson vs. Jane Foster</h2>
+
+            <p>En el reino asgardiano, Thor Odinson, dios del trueno, encarna la fuerza y nobleza mitológicas. Jane Foster, en una realidad alternativa, emerge como una Thor femenina, desafiando la tradición divina. Esta dualidad resalta la versatilidad del mito de Thor y subraya cómo diferentes realidades pueden reinterpretar de manera única las figuras mitológicas.</p>
+
+            <h2 id="hulck-jennifer">Hulk: Bruce Banner vs. Jennifer Walters</h2>
+
+            <p>La narrativa de Hulk se despliega en dos variantes notables. Bruce Banner, el científico atormentado, se transforma en Hulk por la ira descontrolada. En contraste, Jennifer Walters, prima de Bruce, asume el rol de She-Hulk de manera controlada, añadiendo una capa de complejidad y explorando la dualidad de la fuerza y el control.</p>
+
+            <h2>Comparación con el Multiverso DC</h2>
+
+            <p>En el Multiverso DC, realidades alternativas presentan variaciones únicas de héroes icónicos. Sin embargo, la diversidad en Marvel se destaca por la representación de personajes de diversos orígenes, géneros y habilidades. Mientras Marvel se centra en narrativas contemporáneas y humanas, el enfoque mitológico y grandioso de DC a menudo explora conceptos más abstractos de justicia y orden.</p>
+
+            <h2 class="conclucion">Conclusión</h2>
+
+            <p>El multiverso Marvel es un tejido narrativo complejo que enriquece su universo con historias diversas y personajes complejos. A través de estas realidades alternativas, Marvel invita a los lectores a explorar nuevas facetas de sus héroes favoritos. La comparación con el Multiverso DC destaca las distintas filosofías narrativas de cada universo, brindando una perspectiva única y apasionante a los fanáticos del cómic. En conjunto, estos mundos paralelos despliegan infinitas posibilidades que continúan cautivando la imaginación de los lectores.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

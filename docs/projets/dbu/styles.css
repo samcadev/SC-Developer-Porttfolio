@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    background-color: #dddddd;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+}
+nav {
+    background-color: #232323;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box {
+    width: 10rem;
+    background-color: transparent;
+    display: flex;
+    height: 2rem;
+    color: #dddddd;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #dddddd;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+    z-index: 90;
+}
+input {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    color: #dddddd;
+    outline: none;
+}
+
+.resultados {
+    position: absolute;
+    margin-top: 3rem;
+    top: -100cqi;
+    width: 15rem;
+    left: -25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #232323;
+    padding: .5rem;
+    transition: 500ms;
+    overflow: hidden;
+}
+.resultados a {
+    color: #dddddd;
+    text-decoration: none;
+}
+.resultados a:hover {
+    text-decoration: underline;
+}
+.resultados li {
+    list-style: none;
+}
+
+input:valid ~ label,
+input:focus ~ label {
+    top: -5px;
+    scale: .8;
+}
+:focus ~ .resultados {
+    top: auto;
+}
+#noResultados {
+    color: #777777;
+}
+
+h1 {
+    margin-top: 4em;
+    text-align: center;
+}
+h2 {
+    color: #232342;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: .2rem;
+}
+.titulo {
+    margin: 0 5rem 2rem 5rem;
+}
+.introduccion {
+    margin: 0 5rem 1em 5rem;
+}
+.parrafos {
+    margin: 2em 5rem 1em 5rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+i {
+    z-index: 101;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    bottom: -20%;
+}

